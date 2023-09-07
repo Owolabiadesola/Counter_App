@@ -18,12 +18,17 @@ export default class DecrementCounter extends Component {
   render() {
     return (
       <div>
-        <h1> Count - {this.state.decrementcounter} </h1>
+        <h1 style={{ color: "whitesmoke", textAlign: "center" }}>
+          {" "}
+          Count - {this.state.decrementcounter}{" "}
+        </h1>
         <button
           style={{
-            border: "1px solid ",
+            border: "5px lightblue solid ",
             borderRadius: "10px",
             backgroundColor: "white",
+            width: "10rem",
+            fontWeight: "500",
           }}
           onClick={() => this.decrement()}
         >
